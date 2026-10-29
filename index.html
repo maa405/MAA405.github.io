@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohamed Amine Arrami | Portfolio</title>
+    <meta name="description" content="Mohamed Amine Arrami - 2nd year software engineer at EPI. Personal portfolio showcasing projects, skills, and contact information." />
+    <meta property="og:title" content="Mohamed Amine Arrami | Portfolio" />
+    <meta property="og:description" content="Mohamed Amine Arrami - 2nd year software engineer at EPI." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <!-- Google Fonts: Playfair Display (Lendex Serif) & Plus Jakarta Sans (Modern Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..800;1,400..800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="/src/index.css" />
+  </head>
+  <body>
+    <!-- Lendex Background Orbital Vector Lines & Ambient Glow -->
+    <div class="lendex-bg-orbitals" aria-hidden="true">
+      <div class="orbital-circle orbital-left-1"></div>
+      <div class="orbital-circle orbital-left-2"></div>
+      <div class="orbital-circle orbital-right-1"></div>
+      <div class="orbital-circle orbital-right-2"></div>
+      <div class="orbital-glow"></div>
+    </div>
+
+    <!-- Lendex Navigation Bar -->
+    <header class="navbar" id="navbar">
+      <div class="container nav-container">
+        <a href="#hero" class="nav-brand">
+          <span class="nav-brand-logo">MAA</span>
+          <span class="nav-brand-text">Mohamed</span>
+        </a>
+
+        <button id="navToggle" class="nav-toggle-btn" aria-label="Toggle Navigation Menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+
+        <nav>
+          <ul id="navLinks" class="nav-links">
+            <li><a href="#hero" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <a href="#contact" class="nav-cta-btn">
+          <span>Let's Talk</span>
+          <span style="font-size: 1.1rem; line-height: 1;">&raquo;</span>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <!-- Section 1: Hero (Matching Lendex Screenshot 2) -->
+      <section id="hero" class="section hero">
+        <div class="container">
+          <div class="hero-grid">
+            <div class="hero-left-col reveal-init">
+              <div class="hero-greeting">Hello! I’m</div>
+              <h1 class="hero-main-name">Mohamed<br />Amine Arrami</h1>
+              
+              <!-- Subtle wavy squiggly stroke from Lendex -->
+              <svg class="hero-wavy-decor" viewBox="0 0 160 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M2 10C18 3 34 15 50 10C66 5 82 15 98 10C114 5 130 15 158 8" stroke="#475569" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+
+              <div class="hero-subtitle">2nd year as a software engineer at EPI</div>
+              <p class="hero-bio">
+                I enjoy making discord server bots and simple embedded system arduino code.
+              </p>
+
+              <div class="hero-actions-group">
+                <a href="#projects" class="btn-lendex btn-lendex-outline">
+                  <span>View Projects</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+                <a href="#contact" class="btn-lendex btn-lendex-primary">
+                  <span>Contact Me</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Right Hero Photo Area with Orbital Circles (Matching Screenshot 2) -->
+            <div class="hero-photo-stage reveal-init delay-1">
+              <div class="hero-orbit-ring orbit-ring-1" aria-hidden="true"></div>
+              <div class="hero-orbit-ring orbit-ring-2" aria-hidden="true"></div>
+
+              <!-- Floating Orbital Social Buttons -->
+              <a href="https://github.com/maa405" target="_blank" rel="noopener noreferrer" class="orbit-floating-btn orbit-btn-github" title="GitHub Profile">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+              </a>
+
+              <a href="mailto:maarrami405@gmail.com" class="orbit-floating-btn orbit-btn-email" title="Send Email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+              </a>
+
+              <!-- Status Badge -->
+              <div class="orbit-floating-status">
+                <span class="status-dot"></span>
+                <span class="status-text">Software Engineer @ EPI</span>
+              </div>
+
+              <!-- Real Photo of Mohamed Amine Arrami -->
+              <div class="hero-photo-wrapper">
+                <img src="/assets/aistudio/myimage_8b2e1f57.jpeg" alt="Mohamed Amine Arrami" class="hero-photo-img" loading="eager" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2: About -->
+      <section id="about" class="section section-alt">
+        <div class="container">
+          <div class="section-header reveal-init">
+            <div class="lendex-sub-label">
+              <span class="lendex-sub-bars">||</span>
+              <span>About Me</span>
+            </div>
+            <h2 class="lendex-headline">Software Engineering &amp; Embedded Code.</h2>
+          </div>
+
+          <div class="about-cards-row">
+            <div class="lendex-info-card reveal-init delay-1">
+              <div class="info-card-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <h3 class="info-card-title">Studies</h3>
+              <p class="info-card-desc">
+                2nd year as a software engineer at EPI.
+              </p>
+            </div>
+
+            <div class="lendex-info-card reveal-init delay-2">
+              <div class="info-card-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="info-card-title">Interests &amp; Focus</h3>
+              <p class="info-card-desc">
+                I enjoy making discord server bots and simple embedded system arduino code.
+              </p>
+            </div>
+          </div>
+
+          <!-- Interactive Mini Terminal Simulator -->
+          <div class="terminal-card reveal-init">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="term-dot red"></span>
+                <span class="term-dot yellow"></span>
+                <span class="term-dot green"></span>
+              </div>
+              <div class="terminal-title">maa-terminal ~ bots-and-arduino-sim</div>
+              <div style="width: 40px;"></div>
+            </div>
+            <div class="terminal-body" id="terminalBody">
+              <div class="terminal-welcome">
+                [Interactive Simulator] Test Discord bot commands &amp; Arduino embedded system routines in real-time below:
+              </div>
+              <div class="terminal-logs" id="terminalLogs">
+                <div class="log-entry">
+                  <span class="log-prompt">maa@epi:~$</span>
+                  <span class="log-cmd">!bot status</span>
+                  <div class="log-output success">🤖 [Discord Bot] Status: ONLINE | Ready for commands | Author: Mohamed Amine Arrami</div>
+                </div>
+              </div>
+              <div class="terminal-input-row">
+                <span class="terminal-prompt-label">maa@epi:~$</span>
+                <input type="text" id="terminalInput" class="terminal-input" placeholder="Type '!bot ping', 'arduino.readSensor()', 'help' or click a chip below..." autocomplete="off" spellcheck="false" />
+              </div>
+            </div>
+            <div class="terminal-chips-bar">
+              <span class="terminal-chips-label">Quick Commands:</span>
+              <button type="button" class="term-chip" data-cmd="!bot ping">!bot ping</button>
+              <button type="button" class="term-chip" data-cmd="!bot info">!bot info</button>
+              <button type="button" class="term-chip" data-cmd="arduino.toggleLed(13)">arduino.toggleLed(13)</button>
+              <button type="button" class="term-chip" data-cmd="arduino.readSensor()">arduino.readSensor()</button>
+              <button type="button" class="term-chip" data-cmd="clear">clear</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Projects -->
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-header reveal-init">
+            <div class="lendex-sub-label">
+              <span class="lendex-sub-bars">||</span>
+              <span>Recent Project</span>
+            </div>
+            <h2 class="lendex-headline">Restaurant Web Page Frontend.</h2>
+          </div>
+
+          <div class="lendex-project-showcase reveal-init">
+            <div class="project-top-meta">
+              <div>
+                <h3 class="project-big-title">Restaurant Web Page Interface</h3>
+                <p class="project-sub-desc">
+                  Frontend interface built with clean responsive architecture.
+                </p>
+              </div>
+              <span class="project-pill-tag">Frontend Development</span>
+            </div>
+
+            <div class="project-parts-grid">
+              <div class="feature-box" tabindex="0" role="button" aria-label="Menu section">
+                <div class="feature-number">Part 01</div>
+                <h4 class="feature-title">Menu</h4>
+                <p class="feature-desc">
+                  Structured menu layout displaying food dishes, item details, and pricing.
+                </p>
+              </div>
+
+              <div class="feature-box" tabindex="0" role="button" aria-label="About page section">
+                <div class="feature-number">Part 02</div>
+                <h4 class="feature-title">About Page</h4>
+                <p class="feature-desc">
+                  Informational page highlighting restaurant story, values, and dining atmosphere.
+                </p>
+              </div>
+
+              <div class="feature-box" tabindex="0" role="button" aria-label="Order section">
+                <div class="feature-number">Part 03</div>
+                <h4 class="feature-title">Order Section</h4>
+                <p class="feature-desc">
+                  Dedicated customer ordering section for selecting meals and submitting food requests.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4: Skills (Matching Lendex Screenshot 1) -->
+      <section id="skills" class="section section-alt">
+        <div class="container">
+          <div class="skills-lendex-grid">
+            <!-- Left Column: Title & CTA (Exact Layout from Screenshot 1) -->
+            <div class="skills-left-content reveal-init">
+              <div class="lendex-sub-label">
+                <span class="lendex-sub-bars">||</span>
+                <span>Special Skills</span>
+              </div>
+              <h2 class="lendex-headline">My Special Skill<br />Field Here.</h2>
+              
+              <a href="#contact" class="btn-lendex btn-lendex-outline">
+                <span>Contact Me</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <polyline points="19 12 12 19 5 12"></polyline>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Right Column: 4 Skill Progress Cards (Exact Structure from Screenshot 1) -->
+            <div class="skills-stack-right reveal-init delay-1">
+              <!-- C -->
+              <div class="skill-bar-card active-skill" data-lang="c" tabindex="0" role="button">
+                <div class="skill-card-top">
+                  <div class="skill-title-group">
+                    <span class="skill-mini-icon">
+                      <svg width="24" height="24" viewBox="0 0 128 128" fill="none">
+                        <path d="M116.5 35.1L66.7 6.3c-1.6-.9-3.7-.9-5.3 0L11.5 35.1c-1.6.9-2.7 2.7-2.7 4.6v57.6c0 1.9 1 3.7 2.7 4.6l49.8 28.8c1.6.9 3.7.9 5.3 0l49.8-28.8c1.6-.9 2.7-2.7 2.7-4.6V39.7c.1-1.9-.9-3.7-2.6-4.6z" fill="#00599C"/>
+                        <path d="M116.5 35.1L64 65.4v56.3c1.6-.1 3.2-.8 4.3-1.6l48.2-27.9c1.6-.9 2.7-2.7 2.7-4.6V39.7c0-1.9-1-3.7-2.7-4.6z" fill="#004482"/>
+                        <path d="M64 65.4L11.5 35.1c1.6-.9 3.7-.9 5.3 0l47.2 27.3v3z" fill="#659AD2"/>
+                        <path d="M83.2 86.8c-6.8 4.2-14.7 6.2-22.6 5.8-15.4-.8-27.4-13.6-26.6-29 .8-15 13.3-26.7 28.3-26.7 7.2 0 14.1 2.6 19.5 7.4l-7.7 8.9c-3.4-3.1-7.8-4.7-12.4-4.6-9.1.5-16.1 8.2-15.7 17.3.5 8.7 7.7 15.6 16.4 15.6 4.9 0 9.7-1.7 13.5-4.8l7.3 10.1z" fill="#FFFFFF"/>
+                      </svg>
+                    </span>
+                    <span class="skill-bar-name">C (Embedded &amp; Arduino)</span>
+                  </div>
+                  <span class="skill-bar-percent">85%</span>
+                </div>
+                <div class="skill-progress-track">
+                  <div class="skill-progress-fill" style="width: 85%;"></div>
+                </div>
+              </div>
+
+              <!-- C++ -->
+              <div class="skill-bar-card" data-lang="cpp" tabindex="0" role="button">
+                <div class="skill-card-top">
+                  <div class="skill-title-group">
+                    <span class="skill-mini-icon">
+                      <svg width="24" height="24" viewBox="0 0 128 128" fill="none">
+                        <path d="M116.5 35.1L66.7 6.3c-1.6-.9-3.7-.9-5.3 0L11.5 35.1c-1.6.9-2.7 2.7-2.7 4.6v57.6c0 1.9 1 3.7 2.7 4.6l49.8 28.8c1.6.9 3.7.9 5.3 0l49.8-28.8c1.6-.9 2.7-2.7 2.7-4.6V39.7c.1-1.9-.9-3.7-2.6-4.6z" fill="#00599C"/>
+                        <path d="M116.5 35.1L64 65.4v56.3c1.6-.1 3.2-.8 4.3-1.6l48.2-27.9c1.6-.9 2.7-2.7 2.7-4.6V39.7c0-1.9-1-3.7-2.7-4.6z" fill="#004482"/>
+                        <path d="M64 65.4L11.5 35.1c1.6-.9 3.7-.9 5.3 0l47.2 27.3v3z" fill="#659AD2"/>
+                        <path d="M68 83.5c-5.4 3.3-11.6 4.9-17.9 4.6-12.2-.6-21.7-10.7-21-22.9.6-11.8 10.5-21.1 22.4-21.1 5.7 0 11.2 2.1 15.4 5.9l-6.1 7c-2.7-2.4-6.2-3.7-9.8-3.6-7.2.4-12.7 6.5-12.4 13.7.4 6.9 6.1 12.3 13 12.3 3.9 0 7.7-1.3 10.7-3.8l5.7 7.9z" fill="#FFFFFF"/>
+                        <path d="M83.5 58.5h-4.2V54h-3.6v4.5h-4.2v3.6h4.2v4.5h3.6v-4.5h4.2v-3.6zm18 0h-4.2V54h-3.6v4.5h-4.2v3.6h4.2v4.5h3.6v-4.5h4.2v-3.6z" fill="#FFFFFF"/>
+                      </svg>
+                    </span>
+                    <span class="skill-bar-name">C++ (Embedded Systems)</span>
+                  </div>
+                  <span class="skill-bar-percent">80%</span>
+                </div>
+                <div class="skill-progress-track">
+                  <div class="skill-progress-fill" style="width: 80%;"></div>
+                </div>
+              </div>
+
+              <!-- JS -->
+              <div class="skill-bar-card" data-lang="js" tabindex="0" role="button">
+                <div class="skill-card-top">
+                  <div class="skill-title-group">
+                    <span class="skill-mini-icon">
+                      <svg width="24" height="24" viewBox="0 0 128 128" fill="none">
+                        <rect width="128" height="128" rx="16" fill="#F7DF1E"/>
+                        <path d="M72.5 101.4c4 6.9 9.3 11.3 18.8 11.3 7.9 0 13-3.9 13-9.5 0-6.6-5.3-8.9-14.2-12.8-12.8-5.5-21.3-12.4-21.3-24.8 0-12.4 9.5-21.7 24.3-21.7 10.5 0 18.1 4.2 23.2 13.3l-11.4 7.3c-2.6-4.6-5.5-6.6-11.8-6.6-5.5 0-9.2 3.5-9.2 8.1 0 5.5 3.7 7.8 12.2 11.5 14.6 6.3 23.5 13 23.5 25.8 0 14.7-11.6 22.8-27.4 22.8-15.5 0-25.3-7.5-29.7-17.7l11.4-6.9zM29.5 101.5l12.4-7.5c2.6 4.7 5 8.3 10.1 8.3 5.3 0 8.7-2.1 8.7-10.4V44.8h14.7v47.3c0 16.5-9.7 23.9-23.7 23.9-12.7 0-20.2-6.5-22.2-14.5z" fill="#000000"/>
+                      </svg>
+                    </span>
+                    <span class="skill-bar-name">JavaScript (Bots &amp; Frontend)</span>
+                  </div>
+                  <span class="skill-bar-percent">90%</span>
+                </div>
+                <div class="skill-progress-track">
+                  <div class="skill-progress-fill" style="width: 90%;"></div>
+                </div>
+              </div>
+
+              <!-- Python -->
+              <div class="skill-bar-card" data-lang="py" tabindex="0" role="button">
+                <div class="skill-card-top">
+                  <div class="skill-title-group">
+                    <span class="skill-mini-icon">
+                      <svg width="24" height="24" viewBox="0 0 128 128" fill="none">
+                        <path d="M63.5 5.5C36 5.5 37.7 17.5 37.7 17.5l.03 12.4h26.2v3.7H26.3S8.5 31.6 8.5 59.2c0 27.6 15.6 26.6 15.6 26.6h9.3v-13s-.5-15.6 15.3-15.6h25.8s14.8.2 14.8-14.3V19.7S91 5.5 63.5 5.5zm-14.2 9.5a4.8 4.8 0 1 1 0 9.6 4.8 4.8 0 0 1 0-9.6z" fill="#3776AB"/>
+                        <path d="M64.5 122.5c27.5 0 25.8-12 25.8-12l-.03-12.4H64.1v-3.7h37.6s17.8 2 17.8-25.6c0-27.6-15.6-26.6-15.6-26.6h-9.3v13s.5 15.6-15.3 15.6H53.5s-14.8-.2-14.8 14.3v23.2s-1.6 14.2 25.8 14.2zm14.2-9.5a4.8 4.8 0 1 1 0-9.6 4.8 4.8 0 0 1 0 9.6z" fill="#FFD438"/>
+                      </svg>
+                    </span>
+                    <span class="skill-bar-name">Python (Discord Bots)</span>
+                  </div>
+                  <span class="skill-bar-percent">85%</span>
+                </div>
+                <div class="skill-progress-track">
+                  <div class="skill-progress-fill" style="width: 85%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Code Snippet Drawer for Skills -->
+          <div class="code-showcase-card reveal-init" id="codeShowcaseCard">
+            <div class="code-showcase-header">
+              <div class="code-showcase-tabs" id="codeTabs">
+                <button type="button" class="code-tab-btn active" data-target-lang="c">C (Arduino)</button>
+                <button type="button" class="code-tab-btn" data-target-lang="cpp">C++ (Embedded)</button>
+                <button type="button" class="code-tab-btn" data-target-lang="js">JavaScript (Bot &amp; Web)</button>
+                <button type="button" class="code-tab-btn" data-target-lang="py">Python (Discord Bot)</button>
+              </div>
+              <div class="code-showcase-meta">
+                <span class="code-filename-badge" id="codeFilename">arduino_blink.c</span>
+                <button type="button" id="copyCodeBtn" class="code-copy-btn" aria-label="Copy code snippet">
+                  <span id="copyCodeIcon">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                  </span>
+                  <span id="copyCodeText">Copy Code</span>
+                </button>
+              </div>
+            </div>
+            <div class="code-display-body" id="codeDisplayBody">
+              <pre><code id="codeSnippetContent"></code></pre>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5: Contact -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section-header reveal-init">
+            <div class="lendex-sub-label">
+              <span class="lendex-sub-bars">||</span>
+              <span>Get in Touch</span>
+            </div>
+            <h2 class="lendex-headline">Let's Connect.</h2>
+          </div>
+
+          <div class="contact-lendex-grid">
+            <!-- Email (Gmail) Box -->
+            <div class="contact-box-card reveal-init delay-1">
+              <div>
+                <div class="contact-box-header">
+                  <div class="contact-brand-icon" title="Gmail">
+                    <svg width="32" height="32" viewBox="0 0 24 24">
+                      <path fill="#4285F4" d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.272H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L12 9.573l8.073-6.08c1.618-1.214 3.927-.059 3.927 1.964z"/>
+                      <path fill="#EA4335" d="M0 5.457c0-2.023 2.309-3.178 3.927-1.964L12 9.573l8.073-6.08c1.618-1.214 3.927-.059 3.927 1.964L12 16.64 0 7.618V5.457z"/>
+                      <path fill="#FBBC05" d="M20.073 3.493L12 9.573l8.073 6.08L24 10.41V5.457c0-2.023-2.309-3.178-3.927-1.964z"/>
+                      <path fill="#34A853" d="M24 10.41l-5.455 4.09v6.5h3.819A1.636 1.636 0 0 0 24 19.364V10.41z"/>
+                      <path fill="#4285F4" d="M0 10.41l5.455 4.09v6.5h-3.82A1.636 1.636 0 0 1 0 19.364V10.41z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="contact-brand-type">Email Address</div>
+                    <div class="contact-brand-value" id="emailText">maarrami405@gmail.com</div>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-actions-row">
+                <a href="mailto:maarrami405@gmail.com" class="btn-lendex btn-lendex-primary">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                  <span>Send Email</span>
+                </a>
+                <button type="button" id="copyEmailBtn" class="btn-lendex btn-lendex-outline">
+                  <span id="copyBtnIcon">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                  </span>
+                  <span id="copyBtnText">Copy Address</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- GitHub Box -->
+            <div class="contact-box-card reveal-init delay-2">
+              <div>
+                <div class="contact-box-header">
+                  <div class="contact-brand-icon" title="GitHub">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="#ffffff">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="contact-brand-type">GitHub Profile</div>
+                    <div class="contact-brand-value">github.com/maa405</div>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-actions-row">
+                <a href="https://github.com/maa405" target="_blank" rel="noopener noreferrer" class="btn-lendex btn-lendex-primary">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                  </svg>
+                  <span>Open GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Lendex Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-name">Mohamed Amine Arrami</div>
+        <p class="footer-sub">2nd Year Software Engineer at EPI &bull; Personal Portfolio</p>
+      </div>
+    </footer>
+
+    <!-- Toast element for copy confirmation -->
+    <div id="toast" class="toast" role="status" aria-live="polite">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="20 6 9 17 4 12"></polyline>
+      </svg>
+      <span id="toastMsg">Email copied to clipboard!</span>
+    </div>
+
+    <!-- Plain TypeScript entry point -->
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
